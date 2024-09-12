@@ -1,17 +1,17 @@
 function changeMoney() {
-    let Amount = document.getElementById("Amount").value;
-    let FromC = document.getElementById("From").value;
-    let ToC = document.getElementById("To").value;
+    let amount = document.getElementById("amount").value;
+    let fromC = document.getElementById("from").value;
+    let toC = document.getElementById("to").value;
     let Result;
 
 
-    if (FromC == "USD" && ToC == "VND") {
+    if (fromC == "USD" && toC == "VND") {
         Result = "Result: " + (Amount * 23000) + " Đ";
     }
-    else if (FromC == "VND"&& ToC =="USD"){
+    else if (fromC == "VND"&& toC =="USD"){
         Result = "Result: "+ (Amount / 23000) + " $";
     }
-    else if (FromC == "VND") {
+    else if (fromC == "VND") {
         Result = "Result: " + Amount + " Đ"
     } else {
         Result = "Result: " + Amount + " $"
